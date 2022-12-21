@@ -1,0 +1,248 @@
+.body {
+  background-color: #cfcfcf;
+}
+
+.top__component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+.top__component .left a {
+  color: var(--color-two);
+  display: flex;
+  align-items: center;
+}
+.top__component .center {
+  text-align: center;
+}
+.top__component .center h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 55px;
+  color: var(--color-two);
+}
+.top__component .center p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--color-three);
+}
+.top__component .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.top__component .right button {
+  width: 121px;
+  height: 51px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  border: none;
+}
+.top__component .right .recent {
+  background: #bdbdbd;
+  color: #340a8c;
+}
+.top__component .right .last {
+  color: #414141;
+}
+
+.all__contributors {
+  padding: 50px 100px;
+}
+
+.all__contributors .top__contributors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Card styles */
+.contributor__card {
+  background: var(--color-one);
+  width: 408px;
+  /* height: 368px; */
+  box-shadow: 0px 4px 4px rgba(188, 188, 188, 0.25);
+  border-radius: 10px;
+  /* position: relative; */
+}
+.contributor__card .card__head {
+  padding-top: 30px;
+  text-align: center;
+}
+.contributor__card .card__head .card__image {
+  position: relative;
+}
+.contributor__card .card__head .card__image span {
+  position: absolute;
+  top: 60px;
+  height: 32px;
+  width: 32px;
+  right: 37%;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+.contributor__card .card__head .odd__class {
+  background: #dbc062;
+  color: #aa6d25;
+}
+.contributor__card .card__head .even__class {
+  background: #949494;
+  color: #383838;
+}
+.contributor__card .card__head h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 10px 0;
+}
+.contributor__card .card__head p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 7px;
+  color: #595959;
+}
+.contributor__card .card__head button,
+.all__contributors
+  .other__contributors
+  .contributors
+  .contributor
+  .contributions
+  button {
+  width: 209px;
+  height: 41px;
+  background: #cfcfcf;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #340a8c;
+  border: none;
+}
+.contributor__card .card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  height: 63px;
+}
+.contributor__card .card__footer div {
+  width: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #cfcfcf;
+  height: 100%;
+}
+
+/* Other contributors */
+.all__contributors .other__contributors {
+  margin-top: 50px;
+}
+.all__contributors .other__contributors .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #414141;
+}
+.all__contributors .other__contributors .head .search {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  position: relative;
+}
+.all__contributors .other__contributors .head .search img {
+    position: absolute;
+    left: 20px;
+}
+.all__contributors .other__contributors .head .search .form-control {
+    height: 62px;
+    background: #D9D9D9;
+border-radius: 30px;
+outline: #D9D9D9;
+border: none;
+padding-left: 50px;
+}
+.all__contributors .other__contributors .head .search .form-control:focus {
+    outline: #D9D9D9;
+    box-shadow: none;
+}
+.all__contributors .other__contributors .head .sames {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.all__contributors .other__contributors .contributors {
+  margin-top: 40px;
+}
+.all__contributors .other__contributors .contributors .contributor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #efefef;
+  box-shadow: 0px 4px 4px rgba(188, 188, 188, 0.25);
+  border-radius: 10px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.all__contributors .other__contributors .contributors .contributor .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+}
+.all__contributors
+  .other__contributors
+  .contributors
+  .contributor
+  .profile
+  span {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #414141;
+}
+.all__contributors .other__contributors .contributors .contributor .profile h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 10px;
+  margin-top: 30px;
+}
+.all__contributors .other__contributors .contributors .contributor .profile p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #595959;
+}
+.all__contributors .other__contributors .contributions {
+  width: 209px;
+  text-align: center;
+}
+.all__contributors .other__contributors .open__issues,
+.all__contributors .other__contributors .commits,
+.all__contributors .other__contributors .pull__requests {
+  width: 110px;
+}
+.all__contributors .other__contributors .pull__requests {
+  text-align: right;
+}
+.all__contributors .other__contributors .contributor .open__issues,
+.all__contributors .other__contributors .contributor .commits,
+.all__contributors .other__contributors .contributor .pull__requests {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}

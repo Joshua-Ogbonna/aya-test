@@ -1,0 +1,51 @@
+.navbar__component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-one);
+  box-shadow: 0px 4px 4px rgba(177, 177, 177, 0.25);
+  padding: 0 100px;
+  height: 84px;
+}
+.navbar__component .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar__component .brand div {
+  background: #3c2371;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--color-one);
+}
+.navbar__component .brand span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+}
+.navbar__component .right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar__component .right hr {
+  border: 1px solid #c2c1c1;
+  height: 84px;
+}
+.navbar__component .right .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar__component .right .profile span {
+    font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+}
