@@ -110,12 +110,7 @@
   color: #595959;
 }
 .contributor__card .card__head button,
-.all__contributors
-  .other__contributors
-  .contributors
-  .contributor
-  .contributions
-  button {
+.all__contributors .other__contributors .contributors .contributions button {
   width: 209px;
   height: 41px;
   background: #cfcfcf;
@@ -147,13 +142,7 @@
 .all__contributors .other__contributors {
   margin-top: 50px;
 }
-.all__contributors .other__contributors .head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #414141;
-}
-.all__contributors .other__contributors .head .search {
+.all__contributors .other__contributors table thead th .search {
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
@@ -163,26 +152,30 @@
   width: 300px;
   position: relative;
 }
-.all__contributors .other__contributors .head .search img {
-    position: absolute;
-    left: 20px;
+.all__contributors .other__contributors table thead th .search img {
+  position: absolute;
+  left: 20px;
 }
-.all__contributors .other__contributors .head .search .form-control {
-    height: 62px;
-    background: #D9D9D9;
-border-radius: 30px;
-outline: #D9D9D9;
-border: none;
-padding-left: 50px;
+.all__contributors .other__contributors table thead th .search .form-control {
+  height: 62px;
+  background: #d9d9d9;
+  border-radius: 30px;
+  outline: #d9d9d9;
+  border: none;
+  padding-left: 50px;
 }
-.all__contributors .other__contributors .head .search .form-control:focus {
-    outline: #D9D9D9;
-    box-shadow: none;
+.all__contributors .other__contributors .search .form-control:focus {
+  outline: #d9d9d9;
+  box-shadow: none;
 }
-.all__contributors .other__contributors .head .sames {
+.all__contributors .other__contributors table thead th .sames {
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+  margin-bottom: 20px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 .all__contributors .other__contributors .contributors {
   margin-top: 40px;
@@ -197,30 +190,25 @@ padding-left: 50px;
   padding: 0 20px;
   margin-bottom: 20px;
 }
-.all__contributors .other__contributors .contributors .contributor .profile {
+.all__contributors .other__contributors .contributors .profile {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 300px;
 }
-.all__contributors
-  .other__contributors
-  .contributors
-  .contributor
-  .profile
-  span {
+.all__contributors .other__contributors .contributors .profile span {
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
   color: #414141;
 }
-.all__contributors .other__contributors .contributors .contributor .profile h5 {
+.all__contributors .other__contributors .contributors .profile h5 {
   font-weight: 500;
   font-size: 20px;
   line-height: 10px;
   margin-top: 30px;
 }
-.all__contributors .other__contributors .contributors .contributor .profile p {
+.all__contributors .other__contributors .contributors .profile p {
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
@@ -238,11 +226,101 @@ padding-left: 50px;
 .all__contributors .other__contributors .pull__requests {
   text-align: right;
 }
-.all__contributors .other__contributors .contributor .open__issues,
-.all__contributors .other__contributors .contributor .commits,
-.all__contributors .other__contributors .contributor .pull__requests {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+.all__contributors .other__contributors .open__issues,
+.all__contributors .other__contributors .commits,
+.all__contributors .other__contributors .pull__requests,
+.all__contributors .other__contributors .contributions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+.all__contributors .other__contributors table tbody tr {
+  background: var(--color-one);
+}
+table tbody tr:first-child td:first-child {
+  /* border: 2px solid orange; */
+  border-top-left-radius: 10px;
+}
+table tbody tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+table tbody tr:last-child td:first-child {
+  /* border: 2px solid orange; */
+  border-bottom-left-radius: 10px;
+}
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .top__component {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .top__component .center {
+    text-align: left;
+    margin: 20px 0;
+  }
+  .top__component .center h3 {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .all__contributors {
+    padding: 20px;
+  }
+  .all__contributors .top__contributors {
+    flex-wrap: wrap;
+  }
+  .contributor__card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .all__contributors .other__contributors .head,
+  .all__contributors .other__contributors .contributors .contributor {
+    overflow: auto;
+  }
+
+  .all__contributors .other__contributors .head div {
+    width: 200px !important;
+  }
+  .all__contributors .other__contributors .contributors .contributor div {
+    width: 300px !important;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  .top__component {
+    padding: 20px;
+  }
+  .top__component .center h3 {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .all__contributors {
+    padding: 20px;
+  }
+  .all__contributors .top__contributors {
+    flex-wrap: wrap;
+  }
+  .contributor__card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .all__contributors .top__contributors {
+    flex-wrap: wrap;
+  }
+  .contributor__card {
+    margin-bottom: 20px;
+  }
+  .top__component {
+    padding: 20px;
+  }
+  .all__contributors {
+    padding: 20px;
+  }
 }
